@@ -1,19 +1,12 @@
 package com.liyuncong.algorithms.hmmsegmenter;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 import be.ac.ulg.montefiore.run.jahmm.Hmm;
 import be.ac.ulg.montefiore.run.jahmm.ObservationInteger;
 
 public class HmmSegmenter {
 	private static Hmm<ObservationInteger> hmm = SegmentationHmmFactory.hmm();
-	
-	public static void main(String[] args) {
-		String sentence = "我叫王芳";
-		System.out.println(segment(sentence));
-	}
 	
 	public static String segment(String sentence) {
 		if (sentence == null || sentence.length() == 0) {

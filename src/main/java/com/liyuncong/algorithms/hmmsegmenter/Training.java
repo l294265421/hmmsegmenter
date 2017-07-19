@@ -17,7 +17,7 @@ public class Training {
 	private List<String> sentences;
 	
 	private Training() {
-		String fileName = "icwb2-data/training/"
+		String fileName = "sighandata/icwb2-data/training/"
 				+ "pku_training.utf8";
 		try(InputStream input = new FileInputStream(fileName);) {
 			String fileContent = IOUtils.toString(input, "utf-8");
